@@ -8,7 +8,7 @@ This is just a clone of Solid's API It's not a complete implementation, just the
 
 ## Usage
 
-```typescript
+```tsx
 import { useResource } from '?'
 
 const fetcher = () => fetch('https://api.example.com/data')
