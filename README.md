@@ -1,4 +1,3 @@
-````
 # React useResource
 
 This is SolidJS's `createResource` API, implemented in React.
@@ -10,12 +9,8 @@ This is just a clone of Solid's API and not as efficient. It's also not a comple
 ## Usage
 
 ```typescript
-import { useResource } from 'your-package-name';
+import { useResource } from 'your-package-name'
 
-const fetcher = () => fetch('https://api.example.com/data');
-const [data, { refetch, mutate }] = useResource(fetcher);
-````
-
-```
-
+const fetcher = () => fetch('https://api.example.com/data')
+const [data, { refetch, mutate }] = useResource(fetcher)
 ```
