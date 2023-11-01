@@ -13,4 +13,13 @@ import { useResource } from '?'
 
 const fetcher = () => fetch('https://api.example.com/data')
 const [data, { refetch, mutate }] = useResource(fetcher)
+
+return (
+	<pre>
+		{!data.latest && data.isLoading
+			? 'Loading...'
+			: JSON.stringify(data(), null, 2)}
+		{data.error && <div>Error: {data.error}</div>}
+	</pre>
+)
 ```

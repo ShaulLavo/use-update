@@ -17,17 +17,14 @@ const App = () => {
 	}
 
 	return (
-		<div>
-			<pre className="data-container">
-				{!data.latest && data.isLoading
-					? 'Loading...'
-					: JSON.stringify(data(), null, 2)}
-				{data.error && <div>Error: {data.error}</div>}
-			</pre>
-
-			<button onClick={handleRefetch}>Refetch</button>
-		</div>
+		<pre>
+			{!data.latest && data.isLoading
+				? 'Loading...'
+				: JSON.stringify(data(), null, 2)}
+			{data.error && <div>Error: {data.error}</div>}
+		</pre>
 	)
 }
+// <button onClick={handleRefetch}>Refetch</button>
 
 export default App
